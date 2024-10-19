@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>University Course Selection System</h1>
+    </header>
+    <main>
+        <form id="course-selection-form">
+            <section>
+                <div class="ex">
+                <h2>Select Your Courses</h2>
+                <div class="course-section">
+                    <h3>Theory Courses</h3>
+                    <select id="theory-course-1" required>
+                        <option value="">Select Course</option>
+                        <option value="course1">JAVA</option>
+                        <option value="course2">PYTHON</option>
+                        <option value="course3">C</option>
+                        <option value="course4">C++</option>
+                    </select>
+                    <select id="theory-course-2" required>
+                        <option value="">Select Course</option>
+                        <option value="course1">DBMS</option>
+                        <option value="course2">COA</option>
+                        <option value="course3">OS</option>
+                        <option value="course4">DAA</option>
+                    </select>
+                    <select id="theory-course-3" required>
+                        <option value="">Select Course</option>
+                        <option value="course1">AI</option>
+                        <option value="course2">DBMS</option>
+                        <option value="course3">Flat</option>
+                        <option value="course4">JAVA</option>
+                    </select>
+                    <select id="theory-course-4" required>
+                        <option value="">Select Course</option>
+                        <option value="course1">Maths</option>
+                        <option value="course2">Physics</option>
+                        <option value="course3">Chemistry</option>
+                        <option value="course4">AARC</option>
+                    </select>
+                </div>
+                <div class="course-section">
+                    <h3>Lab Courses</h3>
+                    <select id="lab-course-1" required>
+                        <option value="">Select Course</option>
+                        <option value="lab1">JAVA LAB</option>
+                        <option value="lab2">PYTHON LAB</option>
+                        <option value="lab3">C++ LAB</option>
+                    </select>
+                    <select id="lab-course-2" required>
+                        <option value="">Select Course</option>
+                        <option value="lab1">JAVA LAB</option>
+                        <option value="lab2">PYTHON LAB</option>
+                        <option value="lab3">C++ LAB</option>
+                    </select>
+                </div>
+                </div>
+            </section>
+            <section>
+                <h2>Select Teachers</h2>
+                <div id="teachers">
+                    <!-- Teacher options will be dynamically generated -->
+                </div>
+            </section>
+            <button type="submit">Submit Selection</button>
+        </form>
+        <div id="feedback-section">
+            <h2>Teacher Feedback</h2>
+            <textarea id="feedback" placeholder="Leave feedback here..."></textarea>
+            <button id="submit-feedback">Submit Feedback</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Course Selection System and Teacher Assignmet</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
